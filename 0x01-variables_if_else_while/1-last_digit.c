@@ -1,20 +1,19 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-
 /**
  * main - annoying
  *
  * Return: 0
  */
 int main(void)
+{	
 
-{
-		int n;
-		int x;
+	int n;
+	int x;
 
-			srand(time(0));
+
+		srand(time(0));
 			n = rand() - RAND_MAX / 2;
 			x = n % 10;
 			printf("last digit of %d is %d ", n, x);
@@ -29,10 +28,12 @@ int main(void)
 			}
 			if (x < 6 && x != 0)
 			{
+		
 
 				printf("and is less than 6 and not 0");
 			}
 			printf("\n");
+
 			return (0);
 
 }
